@@ -4,8 +4,8 @@
 # description   : Betty is a intelligent and funny bot, she can answer simple question and do simple task.
 #                 she likes to play game and she is very aware of the meteo
 # author        : Yoann Di Maria & Matthieu Vignolle.
-# date 	        : 20161010
-# build         : BETTYBOT 1.1
+# date 	        : 20161017
+# build         : BETTYBOT 2.0
 # usage         : sh betty.sh
 # folder usage  : core/
 # instruction   : README.md
