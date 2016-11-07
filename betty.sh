@@ -44,7 +44,7 @@ echo "\n"
 echo "  ,   ,    "
 echo " /\ ^/ \   "
 echo " | \/   |          ____       _   _ "
-echo " | |    |         |  _ \     | | | |  "
+echo " | |    |         |  _ \     | | | |      2.0 "
 echo "  \ \  /          | |_) | ___| |_| |_ _           _._   "
 echo "  '\|//'          |  _ < / _ \ __| __| | | |    _{ ' }_  "
 echo "    ||            | |_) |  __/ |_| |_| |_| |   { ', ,' } "
@@ -127,8 +127,12 @@ do
 
 		elif [[ "$questfnc" =~ $regexquesttemps ]] ; then
 			echo "$(trsText "cogite")"
-			curl "wttr.in"
-			echo "$(trsText "meteoview")"
+			urlmetro="wttr.in"
+			if [[ ping $urlmetro -n 1 ]] ; then
+						curl $urlmetro
+			else
+				echo "Veuillez-vous connecter à internet"
+			fi
 
 		elif [[ "$questfnc" =~ $regexquestold ]] ; then
 			echo "$(trsText "questold")"
