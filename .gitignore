@@ -1,4 +1,7 @@
 .DS_Store
+<<<<<<< HEAD
 core/.DS_Store
 gitpush.sh
+=======
+>>>>>>> master
 core/session.txt
