@@ -128,11 +128,7 @@ do
 		elif [[ "$questfnc" =~ $regexquesttemps ]] ; then
 			echo "$(trsText "cogite")"
 			urlmetro="wttr.in"
-			if [[ ping $urlmetro -n 1 ]] ; then
 						curl $urlmetro
-			else
-				echo "Veuillez-vous connecter à internet"
-			fi
 
 		elif [[ "$questfnc" =~ $regexquestold ]] ; then
 			echo "$(trsText "questold")"
